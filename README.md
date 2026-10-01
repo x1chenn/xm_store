@@ -56,6 +56,19 @@ npm run build
 
 GitHub Pages 提供 HTTPS 公网访问。`npm run dev` 仍用于本地开发预览，`dist/` 可用于其他静态托管服务。
 
+## 微信小程序初版
+
+`miniprogram/` 提供原生微信小程序源码，复用服饰数据和 14 张店内照片。包含首页、衣橱、单件详情、穿搭和店铺相册，配置了带颜色参数的单件服饰分享。
+
+```sh
+npm run mini:preview
+npm run mini:check
+```
+
+浏览器界面预览：http://127.0.0.1:4174/mini-preview/ 。浏览器中的微信分享与相册行为是模拟的；正式微信运行和发布需要小程序账号及 AppID。详见 [小程序说明](miniprogram/README.md)。
+
+修改 `catalog.js` 后运行 `npm run mini:sync` 更新小程序内容；已发布的小程序需重新上传版本。网站仍独立通过 GitHub Pages 发布。
+
 ## 设计参考
 
 - [RobustRLlib](https://robust-rllib.site/)：单页分区、锚点导航及内容浏览形式。

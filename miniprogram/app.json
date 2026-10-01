@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/collection/index",
+    "pages/journal/index",
+    "pages/boutique/index",
+    "pages/product/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "希美 · XM",
+    "navigationBarBackgroundColor": "#faf9f6",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#faf9f6",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#8b8175",
+    "selectedColor": "#302923",
+    "backgroundColor": "#faf9f6",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/home/index", "text": "希美" },
+      { "pagePath": "pages/collection/index", "text": "衣橱" },
+      { "pagePath": "pages/journal/index", "text": "穿搭" },
+      { "pagePath": "pages/boutique/index", "text": "店铺" }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

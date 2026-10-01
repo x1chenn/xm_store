@@ -1,0 +1,4 @@
+{
+  "desc": "公开展示服饰与店铺页面",
+  "rules": [{ "action": "allow", "page": "*" }]
+}

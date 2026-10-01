@@ -8,7 +8,10 @@
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "mini:sync": "node scripts/sync-mini.mjs",
+    "mini:check": "node scripts/check-mini.mjs",
+    "mini:preview": "node scripts/preview-mini.mjs"
   },
   "engines": { "node": ">=20" }
 }

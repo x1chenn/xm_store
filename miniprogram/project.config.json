@@ -1,0 +1,15 @@
+{
+  "description": "希美 XM 服饰与店铺展示小程序",
+  "miniprogramRoot": "./",
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "xm-store",
+  "setting": {
+    "es6": true,
+    "minified": true,
+    "urlCheck": true
+  },
+  "packOptions": {
+    "ignore": [{ "type": "file", "value": "README.md" }]
+  }
+}
