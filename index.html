@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3efe8" />
+    <meta name="description" content="希美 · XM，发现日常里的从容之美。浏览服饰精选、真实穿搭与店铺空间。" />
+    <title>希美 · XM | 日常，自有风格</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preload" as="image" href="./assets/images/cardigan-rust.jpg" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#collection">跳转到服饰精选</a>
+    <div class="announcement">希美 · XM <span aria-hidden="true">/</span> 发现日常里的从容之美</div>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="希美 XM 首页">XM<span>希 美</span></a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#collection">服饰精选</a><a href="#journal">穿搭手记</a><a href="#boutique">店铺空间</a><a href="#about">关于希美</a>
+      </nav>
+      <a class="header-visit" href="#boutique">走进希美 <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="打开导航"><span></span><span></span></button>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="手机导航" hidden><a href="#collection">服饰精选</a><a href="#journal">穿搭手记</a><a href="#boutique">店铺空间</a><a href="#about">关于希美</a></nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">THE EVERYDAY EDIT <span class="tiny-line"></span> 希美衣橱</p>
+          <h1 id="hero-title">Quietly,<br /><em>beautiful.</em></h1>
+          <p class="hero-chinese">日常，自有风格。</p>
+          <p class="hero-description">温柔的色彩，舒展的轮廓。<br />在熟悉的日常里，找到恰好适合自己的那一件。</p>
+          <a class="solid-link" href="#collection">探索服饰精选 <span aria-hidden="true">↗</span></a>
+          <div class="hero-footnote"><span>柔软有形 · 从容有度</span><span>XM / 01</span></div>
+        </div>
+        <figure class="hero-image">
+          <img src="./assets/images/cardigan-rust.jpg" width="1280" height="1707" alt="希美店内实拍：赤陶棕绞花开衫搭配橄榄棕半裙" fetchpriority="high" />
+          <figcaption><span>THE ART OF EVERYDAY</span><span>实拍穿搭 · 希美 XM</span></figcaption>
+        </figure>
+      </section>
+
+      <div class="collection-intro"><span class="eyebrow">A WARDROBE, A WAY OF LIFE</span><p>不必用力，<span>也能穿出自己的模样。</span></p><a class="text-link" href="#about">认识希美 <span aria-hidden="true">↗</span></a></div>
+
+      <section id="collection" class="collection section-pad" aria-labelledby="collection-title">
+        <div class="section-heading"><div><p class="eyebrow">01 / THE COLLECTION</p><h2 id="collection-title">衣橱精选<span>Selected pieces</span></h2></div><p class="section-description">从一件针织开始，<br />让舒适与风格自然相遇。</p></div>
+        <div class="collection-toolbar"><div class="filters" role="group" aria-label="按服装类别筛选"><button type="button" data-filter="all" aria-pressed="true">全部</button><button type="button" data-filter="knitwear" aria-pressed="false">针织</button><button type="button" data-filter="tops" aria-pressed="false">上衣</button><button type="button" data-filter="skirts" aria-pressed="false">裙装</button><button type="button" data-filter="trousers" aria-pressed="false">裤装</button></div><p class="piece-count" role="status" aria-live="polite"><span id="product-count">8</span> 款精选</p></div>
+        <div id="product-grid" class="product-grid"></div>
+        <noscript><p class="no-script">启用 JavaScript 可浏览分类与服装详情。你也可以在下方穿搭手记中欣赏服饰照片。</p></noscript>
+        <p class="collection-note">实物色彩可能因光线与屏幕略有差异，具体信息以店内实物为准。</p>
+      </section>
+
+      <section id="journal" class="journal section-pad" aria-labelledby="journal-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / STYLE JOURNAL</p><h2 id="journal-title">穿搭，是日常的表达<span>Notes on dressing</span></h2></div><p class="section-description">同一种从容，<br />不同的色彩与心情。</p></div>
+        <div class="journal-grid">
+          <article class="journal-card"><button class="image-button" type="button" data-look="soft" aria-label="查看穿搭：留一点温柔给日常"><img src="./assets/images/vest-ivory.jpg" alt="米白色无袖针织上衣搭配深棕色阔腿裤" width="960" height="1280" loading="lazy" /><span class="photo-expand" aria-hidden="true">↗</span></button><div class="journal-caption"><span class="eyebrow">LOOK 01 / SOFT CONTRAST</span><h3>留一点温柔给日常</h3><p>米白与深棕，让简洁也有层次。</p></div></article>
+          <article class="journal-card journal-lowered"><button class="image-button" type="button" data-look="earth" aria-label="查看穿搭：穿进自然的色彩"><img src="./assets/images/sweater-olive.jpg" alt="苔绿圆领针织上衣搭配橄榄棕长半裙" width="1280" height="1707" loading="lazy" /><span class="photo-expand" aria-hidden="true">↗</span></button><div class="journal-caption"><span class="eyebrow">LOOK 02 / EARTH TONES</span><h3>穿进自然的色彩</h3><p>苔绿与橄榄棕，沉静而有生机。</p></div></article>
+          <article class="journal-card"><button class="image-button" type="button" data-look="layer" aria-label="查看穿搭：在层次间，自在切换"><img src="./assets/images/jacket-ivory.jpg" alt="米白拉链针织外套与白色内搭的层次穿搭" width="1280" height="1707" loading="lazy" /><span class="photo-expand" aria-hidden="true">↗</span></button><div class="journal-caption"><span class="eyebrow">LOOK 03 / EASY LAYERS</span><h3>在层次间，自在切换</h3><p>一件浅色外套，接住日常的轻盈。</p></div></article>
+        </div>
+      </section>
+
+      <section id="boutique" class="boutique" aria-labelledby="boutique-title">
+        <div class="boutique-photo"><button class="image-button" type="button" data-store="0" aria-label="查看希美店铺空间大图"><img src="./assets/images/boutique-interior.jpg" alt="希美店铺内部：暖色木墙、大理石纹理与整齐陈列的服饰" width="1280" height="1707" loading="lazy" /><span class="photo-expand" aria-hidden="true">↗</span></button></div>
+        <div class="boutique-copy"><p class="eyebrow">03 / OUR BOUTIQUE</p><h2 id="boutique-title">在希美，<br />慢慢找到喜欢。</h2><p class="boutique-english">A space to feel at ease.</p><p>木色、暖光，与一件件认真挑选的衣服。<br />我们希望这里是一个能让你放慢脚步的地方。</p><p>看看颜色，摸摸纹理，试试不同的搭配。<br />合适的衣服，值得你亲自感受。</p><button class="text-link" type="button" data-store="0">浏览店铺相册 <span aria-hidden="true">↗</span></button><div class="store-detail"><span>希美 · XM</span><span>服饰 / 穿搭 / 日常</span></div></div>
+      </section>
+
+      <section id="about" class="about section-pad" aria-labelledby="about-title">
+        <div class="about-copy"><p class="eyebrow">04 / THE XM STORY</p><h2 id="about-title">风格不必喧哗。<br /><span>喜欢，就是答案。</span></h2><p>希美 · XM，关注服装，也关注穿着它的你。<br />从好搭配的色彩到自在的轮廓，<br />我们想把那些可以反复穿、慢慢喜欢的衣服，带进你的日常。</p><a class="text-link" href="#collection">寻找你的日常衣橱 <span aria-hidden="true">↗</span></a></div>
+        <figure class="about-photo"><button class="image-button" type="button" data-store="1" aria-label="查看希美品牌墙照片"><img src="./assets/images/boutique-sign.jpg" alt="店内暖光品牌墙上的希美 XM 标识与花束" width="1280" height="1707" loading="lazy" /><span class="photo-expand" aria-hidden="true">↗</span></button><figcaption>一点温度，一份用心。 / A LITTLE WARMTH, EVERY DAY.</figcaption></figure>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-main"><a class="footer-wordmark" href="#home">XM<span>希 美</span></a><p>日常，自有风格。<br /><span>Quietly, beautifully, you.</span></p><a class="text-link" href="#home">回到顶部 <span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><span>© <span id="copyright-year">2026</span> 希美 · XM</span><span>服饰精选 · 店内实拍</span></div></footer>
+
+    <dialog id="detail-dialog" aria-labelledby="detail-title"><button class="dialog-close" type="button" aria-label="关闭详情">×</button><div class="detail-layout"><div class="detail-gallery"><div class="detail-image-wrap"><img id="detail-image" src="./assets/images/cardigan-rust.jpg" alt="" /><button id="previous-photo" class="gallery-arrow previous" type="button" aria-label="上一张照片">←</button><button id="next-photo" class="gallery-arrow next" type="button" aria-label="下一张照片">→</button></div><div id="photo-thumbnails" class="photo-thumbnails" role="group" aria-label="选择照片"></div></div><div class="detail-copy"><p id="detail-eyebrow" class="eyebrow"></p><h2 id="detail-title"></h2><p id="detail-description"></p><div id="product-details"><dl id="detail-specs"></dl><div id="detail-colors" class="detail-colors" role="group" aria-label="选择服饰颜色"></div><p class="detail-note">颜色、尺码与价格信息，以店内实物为准。</p></div><p id="gallery-status" class="gallery-status" aria-live="polite"></p><button class="text-link detail-store-link" type="button">探索店铺空间 <span aria-hidden="true">↗</span></button></div></div></dialog>
+  </body>
+</html>
