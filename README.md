@@ -46,7 +46,15 @@ npm run build
 
 `dist/` 是可部署的静态目录；使用相对路径，兼容根域名和 GitHub Pages 仓库子路径。`build` 会先检查服饰数据、图片文件和站内导航。
 
-如果使用 GitHub Pages，推送代码后可在 GitHub 配置静态托管；当前项目不会自动开启公开部署。
+## GitHub Pages
+
+网站地址：[https://x1chenn.github.io/xm_store/](https://x1chenn.github.io/xm_store/)。
+
+发布配置：仓库的 **Settings → Pages → Build and deployment** 中使用 **Deploy from a branch**，选择 **main** 分支与 **/ (root)** 目录。
+
+仓库根目录中的 `.nojekyll` 让 GitHub Pages 直接发布静态网页。页面、脚本和照片使用相对路径，适配 `/xm_store/` 子路径。以后将更新推送到 `main`，GitHub Pages 会自动重新发布，通常需要几分钟。
+
+GitHub Pages 提供 HTTPS 公网访问。`npm run dev` 仍用于本地开发预览，`dist/` 可用于其他静态托管服务。
 
 ## 设计参考
 
